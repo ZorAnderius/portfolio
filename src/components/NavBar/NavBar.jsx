@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import styles from "./NavBar.module.css";
+import styles from "./Navbar.module.css";
 
 const NavBar = ({ isMobile }) => {
   return (
