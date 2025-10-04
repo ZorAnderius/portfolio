@@ -1,13 +1,14 @@
+import clsx from "clsx";
 import Icon from "../Icon/Icon";
 import styles from "./ThemeToggle.module.css";
 
-const ThemeToggle = ({ toggleTheme}) => {
+const ThemeToggle = ({ toggleTheme, isOpen }) => {
   const handleThemeToogle = () => {
-    toggleTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
+    toggleTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   return (
-    <div className={styles.theme__toggle}>
+    <div className={clsx(styles.theme__toggle, isOpen && styles.hide)}>
       <input
         type="checkbox"
         id="theme-toggle"

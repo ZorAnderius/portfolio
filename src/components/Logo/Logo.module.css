@@ -6,6 +6,11 @@
   text-transform: uppercase;
 }
 
+.logo.mobile {
+  position: relative;
+  z-index: var(--z-main);
+}
+
 .logo span {
   color: var(--accent-clr);
 }

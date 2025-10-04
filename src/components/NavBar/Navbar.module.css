@@ -2,6 +2,23 @@
   display: none;
 }
 
+.navigation.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.nav__list.mobile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-md);
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     display: block;

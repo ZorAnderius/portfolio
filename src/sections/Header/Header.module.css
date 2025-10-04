@@ -7,7 +7,7 @@
 
 .header__right {
   display: flex;
-  gap: var(--gap-xl);
+  gap: var(--gap-sm);
   justify-content: flex-end;
 }
 
@@ -15,6 +15,12 @@
   .header {
     padding: var(--padding-md);
   }
+
+  .header__right {
+  display: flex;
+  gap: var(--gap-xl);
+  justify-content: flex-end;
+}
 }
 
 @media screen and (min-width: 1200px) {
