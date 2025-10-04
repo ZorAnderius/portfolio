@@ -1,0 +1,23 @@
+.logo {
+  color: var(--primary-clr);
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--accent-clr);
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 2rem;
+  }
+}

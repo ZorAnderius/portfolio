@@ -1,17 +1,45 @@
 :root {
+  --min-width: 320px;
+  --max-width: 1440px;
+  --basic-font-size: 16px;
+
+  --gap-sm: 1rem;
+  --gap-md: 1.5rem;
+  --gap-lg: 2rem;
+  --gap-xl: 2.5rem;
+
+  --padding-sm: 1.2rem;
+  --padding-md: 1.5rem;
+  --padding-lg: 2rem;
+  --padding-xl: 2.25rem;
+
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 1.5rem;
+  --border-radius-circle: 30px;
+
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.3s ease-in-out;
+  --transition-slow: 0.4s ease-in-out;
+
+  --sun-clr: #f0f056;
+  --moon-clr: #fafafa;
+
+  /* Light theme */
   --primary-clr: #292929;
-  --secondary-clr: #F0F0F0;
-  --accent-bg-clr: #00B068;
-  --hover-bg-clr: #009156;
-  --secondary-bg-clr: #E4E5E6;
-  --secondary-hover-bg-clr: #BBBBBB;
+  --secondary-clr: #f0f0f0;
+  --accent-clr: #00b068;
+  --hover-clr: #009156;
+  --secondary-bg-clr: #e4e5e6;
+  --secondary-hover-bg-clr: #bbbbbb;
 }
 
+/* dark theme */
 .dark {
-  --primary-clr: #F0F0F0;
+  --primary-clr: #f0f0f0;
   --secondary-clr: #292929;
-  --accent-clr: #14C57C;
+  --accent-clr: #14c57c;
   --hover-clr: #009156;
-  --secondary-bg-clr: #2A2D32;
-  --secondary-hover-bg-clr: #3B3F45;
+  --secondary-bg-clr: #2a2d32;
+  --secondary-hover-bg-clr: #3b3f45;
 }

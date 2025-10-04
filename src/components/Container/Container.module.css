@@ -1,0 +1,4 @@
+.container{
+    max-width: clamp(var(--min-width), 80%, var(--max-width));
+    margin: 0 auto;
+}

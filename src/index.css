@@ -1,0 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  font-size: var(--basic-font-size);
+  background-color: var(--secondary-clr);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ImpactCustom", sans-serif;
+}

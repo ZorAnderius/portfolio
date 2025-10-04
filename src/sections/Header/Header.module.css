@@ -1,0 +1,24 @@
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: var(--padding-sm);
+}
+
+.header__right {
+  display: flex;
+  gap: var(--gap-xl);
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: var(--padding-md);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: var(--padding-xl);
+  }
+}

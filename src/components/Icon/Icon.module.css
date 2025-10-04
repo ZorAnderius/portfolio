@@ -1,0 +1,20 @@
+.icon {
+  fill: var(--primary-clr);
+  transition: fill var(--transition-medium);
+}
+
+.icon:is(:hover, :focus) {
+  fill: var(--accent-clr);
+}
+
+.icon.sun {
+  position: relative;
+  z-index: 2;
+  fill: var(--sun-clr);
+}
+
+.icon.moon {
+  position: relative;
+  z-index: 2;
+  fill: var(--moon-clr);
+}
