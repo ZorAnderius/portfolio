@@ -1,0 +1,17 @@
+:root {
+  --primary-clr: #292929;
+  --secondary-clr: #F0F0F0;
+  --accent-bg-clr: #00B068;
+  --hover-bg-clr: #009156;
+  --secondary-bg-clr: #E4E5E6;
+  --secondary-hover-bg-clr: #BBBBBB;
+}
+
+.dark {
+  --primary-clr: #F0F0F0;
+  --secondary-clr: #292929;
+  --accent-clr: #14C57C;
+  --hover-clr: #009156;
+  --secondary-bg-clr: #2A2D32;
+  --secondary-hover-bg-clr: #3B3F45;
+}

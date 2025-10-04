@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "ImpactCustom";
+  src: url("../font/impact.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Poppins Light (300) */
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/poppins-v21-latin-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Poppins regular */
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/poppins-v21-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Poppins  (500) */
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/poppins-v21-latin-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
