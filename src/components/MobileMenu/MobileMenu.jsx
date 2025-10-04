@@ -34,16 +34,6 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
     }, 200);
   }, [setIsOpen]);
 
-  const handleCloseModal = useCallback(
-    (e) => {
-      console.log(e.key);
-      if (e.key === "Esc" || e.key === "Enter") {
-        closeMenu();
-      }
-    },
-    [closeMenu]
-  );
-
   useEffect(() => {
     isOpen
       ? document.body.classList.add("no-scroll")
