@@ -4,14 +4,14 @@ import NavBar from "../../components/NavBar/NavBar";
 import ThemeToggle from "../../components/ThemeTogle/ThemeToggle";
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ toggleTheme}) => {
   return (
     <header>
       <Container>
         <div className={styles.header}>
           <Logo />
           <div className={styles.header__right}>
-            <ThemeToggle />
+            <ThemeToggle toggleTheme={toggleTheme} />
             <NavBar />
           </div>
         </div>

@@ -1,14 +1,11 @@
-import { useState } from "react";
 import Icon from "../Icon/Icon";
 import styles from "./ThemeToggle.module.css";
 
-const ThemeToggle = () => {
-  const [theme, setTheme] = useState("light");
+const ThemeToggle = ({ toggleTheme}) => {
   const handleThemeToogle = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
-    document.body.classList.toggle("dark");
+    toggleTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
   };
+
   return (
     <div className={styles.theme__toggle}>
       <input
