@@ -17,7 +17,7 @@ const Button = ({
         styles.btn,
         styles[variant],
         styles[size],
-        className && styles[className]
+        className
       )}
       onClick={onClick}
       {...props}

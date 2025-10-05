@@ -1,0 +1,19 @@
+.section {
+  padding-top: var(--padding-mobile);
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: var(--padding-tablet);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: var(--padding-desktop);
+  }
+}
+
+.section.hero {
+  padding-top: var(--padding-hero);
+}
