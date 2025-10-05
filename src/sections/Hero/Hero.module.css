@@ -87,7 +87,12 @@ picture {
   background-color: var(--hero-btn-bg-clr);
   border-radius: var(--border-radius-md);
   z-index: -1;
-  transition: all var(--transition-medium);
+  transition: all var(--transition-slow);
+}
+
+.hero__btn:is(:hover, :focus) {
+  color: var(--accent-clr);
+  text-shadow: 0 0 9px var(--white-clr);
 }
 
 .hero__btn:is(:hover, :focus)::after {
@@ -114,6 +119,7 @@ picture {
   }
 
   .hero__btn {
+    align-self: end;
     grid-area: 2 / 1 / 3 / 2;
   }
 
@@ -132,6 +138,10 @@ picture {
     background-image: url("../../assets/images/bg/hero/bg_desktop.webp");
     background-size: contain;
     z-index: -1;
+  }
+
+  .hero__btn::after {
+    width: 60%;
   }
 }
 

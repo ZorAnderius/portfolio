@@ -18,3 +18,21 @@
   z-index: 2;
   fill: var(--moon-clr);
 }
+
+.icon.long-arrow {
+  z-index: 2;
+  fill: var(--accent-clr);
+  animation: moveArrow 1.5s ease-in-out infinite;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

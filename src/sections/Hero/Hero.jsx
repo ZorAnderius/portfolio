@@ -31,7 +31,7 @@ const Hero = () => {
             thumb={"hero"}
           />
           <Button className={styles.hero__btn}>
-            <Icon name="long-arrow" size="28" />
+            <Icon name="long-arrow" size="28" className="long-arrow" />
             <p>Contat with me</p>
           </Button>
         </div>
