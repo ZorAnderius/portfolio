@@ -9,6 +9,7 @@ import Section from "../../components/Section/Section";
 import styles from "./Hero.module.css";
 import Button from "../../components/Button/Button";
 import Icon from "../../components/Icon/Icon";
+import SocialMediaList from "../../components/SocialMediaList/SocialMediaList";
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
               <span>Hello, I am</span>
               <span> Fullstack developer</span>
             </h1>
+            <SocialMediaList />
           </div>
           <ResponsiveImage
             desktop={heroDesktop}
