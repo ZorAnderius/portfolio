@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Icon from "../Icon/Icon";
 import styles from "./ThemeToggle.module.css";
 
-const ThemeToggle = ({ toggleTheme, isOpen }) => {
+const ThemeToggle = ({ toggleTheme, theme, isOpen }) => {
   const handleThemeToogle = () => {
     toggleTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
@@ -14,6 +14,7 @@ const ThemeToggle = ({ toggleTheme, isOpen }) => {
         id="theme-toggle"
         className={styles.input__toggle}
         aria-hidden="true"
+        checked={theme === "dark"}
         onChange={handleThemeToogle}
       />
       <label htmlFor="theme-toggle" className={styles.label}>

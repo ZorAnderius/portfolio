@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Header toggleTheme={setTheme} />
+      <Header toggleTheme={setTheme} theme={theme}/>
       <h1>Portfolio</h1>
       <p> myPortfolio</p>
     </>

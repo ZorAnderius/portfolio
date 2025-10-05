@@ -30,7 +30,8 @@
   --z-main: 10000;
 
   --sun-clr: #f0f056;
-  --moon-clr: #fafafa;
+  --icon-unactive-clr: #bdbdbc;
+  --moon-clr: #f2ff8b;
   --moon-bg-clr: #141313;
 
   /* Light theme */

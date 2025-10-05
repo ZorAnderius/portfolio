@@ -49,3 +49,8 @@
   left: 26px;
   background-color: var(--moon-bg-clr);
 }
+
+.input__toggle:checked + .label svg:first-child,
+.input__toggle:not(:checked) + .label svg:last-child {
+  fill: var(--icon-unactive-clr);
+}

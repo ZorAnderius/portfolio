@@ -6,7 +6,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import ThemeToggle from "../../components/ThemeTogle/ThemeToggle";
 import styles from "./Header.module.css";
 
-const Header = ({ toggleTheme }) => {
+const Header = ({ toggleTheme, theme }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header>
@@ -14,7 +14,7 @@ const Header = ({ toggleTheme }) => {
         <div className={styles.header}>
           <Logo isMobileOpen={isOpen} />
           <div className={styles.header__right}>
-            <ThemeToggle toggleTheme={toggleTheme} isOpen={isOpen} />
+            <ThemeToggle toggleTheme={toggleTheme} theme={theme} isOpen={isOpen} />
             <NavBar />
             <MobileMenu setIsOpen={setIsOpen} isOpen={isOpen} />
           </div>
