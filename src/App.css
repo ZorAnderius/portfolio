@@ -1,5 +1,44 @@
-.main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.title,
+.subtitle {
+  color: var(--primary-clr);
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: left;
+  font-size: 3.25rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 1.8px;
+}
+
+.title span {
+  color: var(--accent-clr);
+}
+
+.subtitle {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 6.75rem;
+    line-height: 1.23;
+  }
+
+  .subtitle {
+    font-size: 2.25rem;
+    line-height: 1.33;
+  }
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./sections/Header/Header";
 import Hero from "./sections/Hero/Hero";
+import About from "./sections/About/About";
 
 const themeFromLocal = localStorage.getItem("theme") || "light";
 function App() {
@@ -11,7 +12,6 @@ function App() {
     theme === "dark"
       ? document.body.classList.add("dark")
       : document.body.classList.remove("dark");
-    console.log(theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
@@ -20,6 +20,7 @@ function App() {
       <Header toggleTheme={setTheme} theme={theme} />
       <main className="main">
         <Hero />
+        <About />
       </main>
     </>
   );

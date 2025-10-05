@@ -19,7 +19,7 @@
   height: 107%;
   background-image: url("../../assets/images/bg/hero/bg_mobile.webp");
   background-size: contain;
-  z-index: 1;
+  z-index:-1;
 }
 
 .hero__content {

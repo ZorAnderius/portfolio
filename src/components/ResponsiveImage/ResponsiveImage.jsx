@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import styles from "./ResponsiveImage.module.css";
 
 const ResponsiveImage = ({
@@ -24,7 +25,7 @@ const ResponsiveImage = ({
       {mobile && (
         <source media="(max-width: 767px)" srcSet={mobile} type="image/webp" />
       )}
-      <img src={fallback} alt={alt} className={className} />
+      <img src={fallback} alt={alt} className={clsx(styles.img, className)} />
     </picture>
   );
 };

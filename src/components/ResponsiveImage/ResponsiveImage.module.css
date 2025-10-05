@@ -1,6 +1,5 @@
-.hero {
-  width: 230px;
-  height: 290px;
+.hero,
+.about {
   display: block;
   overflow: hidden;
   border-radius: 10px;
@@ -8,7 +7,17 @@
   z-index: 3;
 }
 
-.hero img {
+.hero {
+  width: 230px;
+  height: 290px;
+}
+
+.about {
+  width: 320px;
+  height: 100%;
+}
+
+.img {
   width: 100%;
   height: 100%;
   display: block;
@@ -17,17 +26,33 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero,
+  .about {
+    border-radius: 15px;
+  }
+
   .hero {
     width: 270px;
     height: 336px;
-    border-radius: 15px;
+  }
+
+  .about {
+    width: 336px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .hero,
+  .about {
+    border-radius: 25px;
+  }
+
   .hero {
     width: 558px;
     height: 800px;
-    border-radius: 25px;
+  }
+
+  .about {
+    width: 384px;
   }
 }

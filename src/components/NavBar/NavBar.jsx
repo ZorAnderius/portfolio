@@ -9,7 +9,7 @@ const NavBar = ({ isMobile, className }) => {
         aria-label="navigation"
       >
         <li>
-          <a href="#" className={styles.link__btn}>
+          <a href="#about-me" className={styles.link__btn}>
             About me
           </a>
         </li>
