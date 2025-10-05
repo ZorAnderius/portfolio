@@ -19,6 +19,7 @@
   .hero {
     width: 270px;
     height: 336px;
+    border-radius: 15px;
   }
 }
 
@@ -26,5 +27,6 @@
   .hero {
     width: 558px;
     height: 800px;
+    border-radius: 25px;
   }
 }

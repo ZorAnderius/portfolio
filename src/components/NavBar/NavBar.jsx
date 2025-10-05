@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import styles from "./Navbar.module.css";
 
-const NavBar = ({ isMobile }) => {
+const NavBar = ({ isMobile, className }) => {
   return (
-    <nav className={clsx(styles.navigation, isMobile && styles.mobile)}>
+    <nav className={clsx(styles.navigation, isMobile && styles.mobile, className)}>
       <ul
         className={clsx(styles.nav__list, isMobile && styles.mobile)}
         aria-label="navigation"

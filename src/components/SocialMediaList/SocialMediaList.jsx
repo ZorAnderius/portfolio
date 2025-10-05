@@ -6,7 +6,7 @@ const SocialMediaList = ({ className }) => {
     <ul className={clsx(styles.social__list, className)}>
       <li>
         <a
-          href="www.linkedin.com/in/ivan-ostrovka"
+          href="https://www.linkedin.com/in/ivan-ostrovka"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.social__link}

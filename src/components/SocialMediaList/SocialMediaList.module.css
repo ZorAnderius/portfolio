@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .social__list {
     display: flex;
     gap: var(--gap-xl);
@@ -15,5 +15,11 @@
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 0.5px;
+    transition: color var(--transition-medium);
+  }
+
+  .social__link:is(:hover, :focus) {
+    color: var(--accent-clr);
   }
 }
+

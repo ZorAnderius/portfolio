@@ -3,6 +3,7 @@ import styles from "./MobileMenu.module.css";
 import Button from "../Button/Button";
 import clsx from "clsx";
 import NavBar from "../NavBar/NavBar";
+import SocialMediaList from "../SocialMediaList/SocialMediaList";
 
 const MobileMenu = ({ isOpen, setIsOpen }) => {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -102,7 +103,8 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
               isAnimated && styles.menu__open
             )}
           >
-            <NavBar isMobile={true} />
+            <NavBar isMobile={true} className={styles.mobile__nav__list}/>
+            <SocialMediaList className={styles.mobile__social} />
           </div>
         </div>
       )}
