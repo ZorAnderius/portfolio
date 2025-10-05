@@ -9,7 +9,7 @@ import styles from "./Header.module.css";
 const Header = ({ toggleTheme, theme }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header>
+    <header className={styles.header__main}>
       <Container>
         <div className={styles.header}>
           <Logo isMobileOpen={isOpen} />

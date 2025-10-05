@@ -37,8 +37,18 @@ const Hero = () => {
             <p>Contat with me</p>
           </Button>
         </div>
-        <div className={styles.hero__subtitle}></div>
       </Container>
+      <div className={styles.hero__subtitle}>
+        <Container>
+          <p className={styles.hero__description}>
+            I&apos;m a full-stack developer passionate about creating{" "}
+            <span>fast, modern</span>, and
+            <span>accessible web applications</span>. Each project is crafted
+            with care and an individual approach to deliver results that feel
+            both functional and refined.
+          </p>
+        </Container>
+      </div>
     </Section>
   );
 };

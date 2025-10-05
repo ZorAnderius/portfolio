@@ -5,6 +5,7 @@
   overflow: hidden;
   border-radius: 10px;
   padding: 0;
+  z-index: 3;
 }
 
 .hero img {
