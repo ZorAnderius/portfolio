@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./sections/Header/Header";
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
+import Skills from "./sections/Skills/Skills";
 
 const themeFromLocal = localStorage.getItem("theme") || "light";
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <main className="main">
         <Hero />
         <About />
+        <Skills />
       </main>
     </>
   );

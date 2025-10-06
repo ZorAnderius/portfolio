@@ -1,0 +1,81 @@
+.marque {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.marque.first {
+  background-color: var(--skills-bg-clr);
+  color: var(--primary-clr);
+  z-index: var(--z-10);
+}
+
+.marque.second {
+  transform: rotate(2deg);
+  background-color: var(--secondary-bg-clr);
+  color: var(--accent-clr);
+}
+
+.marque__inner {
+  display: flex;
+  width: 200%;
+  animation: moveMarquee 30s linear infinite;
+}
+
+.marque__inner.first {
+  animation-direction: reverse;
+}
+
+.marque__inner.second {
+  animation-direction: normal;
+}
+
+.marque__line {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  width: 50%;
+  padding: 32px 0;
+  white-space: nowrap;
+}
+
+.marque__line li {
+  position: relative;
+  list-style: none;
+}
+
+.marque__line li::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: -28px;
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+@keyframes moveMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marque {
+    font-size: 2.25rem;
+    line-height: 1.33;
+  }
+
+  .marque__line {
+    padding: 40px 0;
+  }
+}

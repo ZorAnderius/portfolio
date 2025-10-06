@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: var(--basic-font-size);
   background-color: var(--mobile-menu-bg-clr);
+  overflow-x: clip;
 }
 
 h1,
