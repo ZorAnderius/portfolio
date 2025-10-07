@@ -4,6 +4,7 @@ import Header from "./sections/Header/Header";
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
+import ContactMe from "./sections/ContactMe/ContactMe";
 
 const themeFromLocal = localStorage.getItem("theme") || "light";
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <ContactMe />
       </main>
     </>
   );
